@@ -1,0 +1,125 @@
+body * {
+  all: unset;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1280px;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 10px 0 20px 0;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+  color: #2e3333;
+  font-weight: bold;
+  margin: 20px 0 20px 0;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+header {
+  border-bottom: 1px solid lightgray;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  width: 200px;
+}
+
+.hero {
+  padding: 20px 0;
+}
+
+.hero .container {
+  display: flex;
+  gap: 40px;
+}
+
+.hero img {
+  width: 350px;
+  border-radius: 5px;
+}
+
+.hero p {
+  color: #868a8a;
+  font-size: 19px;
+  line-height: 29px;
+}
+
+main {
+  background-color: #f3f5f5;
+}
+
+main .container {
+  display: flex;
+}
+
+.bucket {
+  width: 350px;
+}
+
+.category {
+  padding-bottom: 20px;
+}
+
+.category section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+article {
+  width: 40%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+article img {
+  width: 132px;
+  height: 132px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+article p {
+  color: #808484;
+}
+
+article>div {
+  display: flex;
+  flex-direction: column;
+}
+
+article>div>p {
+  margin-bottom: 20px;
+}
+
+article>div>div {
+  font-size: 17px;
+  /* justify-self: end; */
+  display: flex;
+  gap: 20px;
+}
+
+.popular {
+  color: orange;
+}
+
+.bucket {
+  flex-shrink: 0;
+}
