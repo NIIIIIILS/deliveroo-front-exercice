@@ -1,6 +1,7 @@
 body * {
   all: unset;
   box-sizing: border-box;
+  display: block;
 }
 
 .container {
