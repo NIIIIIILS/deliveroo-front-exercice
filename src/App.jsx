@@ -27,7 +27,7 @@ function App() {
         const response = await axios.get(
           "https://site--backend-deliveroo--fn6hxrqtx4nq.code.run/"
         );
-        // console.log(response.data);
+        // console.log(response.data); test
         setData(response.data);
         setIsLoading(false);
       } catch (error) {
