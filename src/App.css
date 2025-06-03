@@ -1,8 +1,8 @@
-body * {
+/* body * {
   all: unset;
   box-sizing: border-box;
   display: block;
-}
+} */
 
 .container {
   margin: 0 auto;
