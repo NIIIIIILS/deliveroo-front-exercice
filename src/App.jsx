@@ -5,6 +5,33 @@ import defaultImage from "./assets/images/default-meal.png";
 import { FaStar } from "react-icons/fa";
 import axios from "axios";
 
+const Header = () => {
+  return (
+    <header>
+      <div className="container">
+        <img src={logo} alt="logo deliveroo" />
+      </div>
+    </header>
+  );
+};
+
+const Hero = ({ name, description, picture }) => {
+  return (
+    <section className="hero">
+      <div className="container">
+        <div className="hero-left">
+          <h1>{name}</h1>
+          <p>{description}</p>
+        </div>
+        <img
+          src={picture}
+          alt="magnifique plateau repas (avec saumon et cookies)"
+        />
+      </div>
+    </section>
+  );
+};
+
 function App() {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -42,23 +69,12 @@ function App() {
     <p>Chargement...</p>
   ) : (
     <>
-      <header>
-        <div className="container">
-          <img src={logo} alt="logo deliveroo" />
-        </div>
-      </header>
-      <section className="hero">
-        <div className="container">
-          <div className="hero-left">
-            <h1>{data.restaurant.name}</h1>
-            <p>{data.restaurant.description}</p>
-          </div>
-          <img
-            src={data.restaurant.picture}
-            alt="magnifique plateau repas (avec saumon et cookies)"
-          />
-        </div>
-      </section>
+      <Header />
+      <Hero
+        name={data.restaurant.name}
+        description={data.restaurant.description}
+        picture={data.restaurant.picture}
+      />
       <main>
         <div className="container">
           <section>
